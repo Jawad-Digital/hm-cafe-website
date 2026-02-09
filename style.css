@@ -51,7 +51,7 @@ section{
     background: none;
     border: 1px solid #c7a75a;
     color: #fff;
-    padding: 8px 15px;
+    padding: 8px 25px;
     margin: 5px;
     cursor: pointer;
     border-radius: 20px;
@@ -59,6 +59,16 @@ section{
 .tab.active{
     background-color: #c7a75a;
     color: #000;
+}
+.contest{
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.7)
+    ),
+     url("backMenu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menu-section{
     display: none;
@@ -84,11 +94,45 @@ section{
 }
 /* Contect */
 .contect{
-    background-color: #0a1312;
+    
+    padding: 20px;
 }
+.qr{
+    text-align: center;
+    padding: 40px 0;
+}
+.qr img{
+    width: 160px;
+}
+.whatsapp-btn{
+    display: inline-block;
+    background-color: #147b3a;
+    color: white;
+    padding: 12px 25px ;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.whatsapp-btn:hover{
+    background-color: #12bc7e;
+    transform: scale(1.05);
+}
+.submit{
+    padding: 15px 20px;
+    margin: 30px;
+    border: 2px ;
+    background: linear-gradient(
+        rgba(255,255,255,0.4)
+    );
+    color: #000;
+    border-radius: 25px;
+}
+
 @media (max-width: 600px){
     .menu-section ul{
         grid-template-columns: 1fr;
     }
-
 }
